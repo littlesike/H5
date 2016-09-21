@@ -1,0 +1,117 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html,body{
+    height: 100%;
+    font-size: 1rem;
+}
+header{
+    margin-bottom: 1px;
+    color: white;
+}
+.header{
+    float: left;
+    /*display: inline-block;*/
+    width: 65%;
+    height: 10vh;
+    background-color: #082a62;
+    text-align: center;
+    font-size: 5vw;
+    line-height: 10vh;
+}
+.hotline{
+    display: inline-block;
+    background-color: #033e81;
+    width: 35%;
+    padding-top: 2vh;
+    padding-left: 2vw;
+    height: 10vh;
+}
+.hotline img{
+   
+    float: left;
+    height: 6vh;
+    
+}
+.hotline p{
+    font-size: 2vw;
+    margin: 1vw;
+}
+/*@media screen and (min-width:760px){
+    .hotline{
+        padding-top:20px; 
+    }
+     .hotline p{
+         font-size: 20px;
+     }
+}*/
+.hotline span{
+     
+    font-size: 3vw;
+}
+.clear{
+    clear: both;
+}
+.hotline p{
+    display: inline-block;
+}
+main{
+    width: 100%;
+    height: 80vh;
+    background-image: url(tupian/背景.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.people{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 50vw;
+}
+.sixsection{
+    width: 50%;
+    height: 60%;
+    float: right;
+    margin-top: 20vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.sixsection a{
+     display: inline-block;
+     width: 45%;
+     margin: 1vh 1vw;
+     background-image: url(tupian/小方块.png);
+     background-repeat: no-repeat;
+     background-size: cover;
+     text-decoration: none;
+     text-align: center;
+     padding-top: 5vh;
+     color: #05407d;
+     font-size: 3vw;
+}
+.sixsection a img{
+   width: 40%;
+   height: 40%;
+}
+footer{
+    height: 10vh;
+}
+footer a{
+    float: left;
+    width: 25vw;
+    background-color: #082a62;
+    height: 100%;
+    text-align: center;
+    padding-top: 2vh;
+    font-size: 3vw;
+    text-decoration: none;
+    color: white;
+}
+footer a img{
+    width: 5vw;
+    height: 3vh;
+}
