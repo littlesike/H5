@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="author" content="吕世强" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <title></title>
+    <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <style>
+        *{
+            margin:0;
+        }
+        #content{
+            width: 500px;
+            height: 500px;
+            margin:15vh auto;
+         
+        }
+    </style>
+</head>
+
+<body>
+    <div id="content"></div>
+
+<script id="table" type="text/html">
+   <a href="editor.html" class="btn btn-success">新增</a>
+   <a href="delete.html" class="btn btn-warning">删除</a>
+    <h1>{{title}}</h1>
+    <table class="table table-striped">
+      <tr>
+        <th>姓名</th>
+        <th>年龄</th>
+        <th>爱好</th>
+        <th>职业</th>
+      </tr>
+      {{each list as value i}}
+      <tr>
+        <td>{{value.name}}</td>
+        <td>{{value.age}}</td>
+        <td>{{value.hobby}}</td>
+        <td>{{value.work}}</td>
+      </tr>
+      {{/each}}
+    </table>
+  </script>
+  <script src="lib/template.js"></script>
+  <script src="js/list.js"></script>
+
+
+
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="author" content="吕世强" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <title></title>
+    <link rel="stylesheet" href="css/editor.css">
+    <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <style>
+        .content{
+            width: 500px;
+            height: 500px;
+            margin:15vh auto;
+            text-align:center;
+            padding:50px;
+            background-color: orange;
+        }
+        label{
+            margin: 20px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="content">
+        <label for="">姓名 </label>
+        <input type="text" id="name" placeholder="请输入姓名"><br>
+        <label for="">年龄 </label>
+        <input type="text" id="age" placeholder="请输入年龄"><br>
+        <label for="">爱好 </label>
+        <input type="text" id="hobby" placeholder="请输入爱好"><br>
+        <label for="">职业 </label>
+        <input type="text" id="work" placeholder="请输入职业"><br>
+        <a href="list.html" onclick="create()" id="btn" class="btn btn-success">返回</a>
+    </div>
+
+    <script src="js/editor.js"></script>
+</body>
+
+</html>
